@@ -1,0 +1,12 @@
+.img {
+  &--logo,
+  &--avatar{
+  display: block;
+  margin: auto;
+  }
+  &--frame {
+    border: 1px solid $color_lightgray;
+    padding: 1em;
+    max-width: 100%;
+  }
+}

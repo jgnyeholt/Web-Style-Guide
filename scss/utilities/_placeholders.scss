@@ -1,0 +1,14 @@
+%btn {
+  box-sizing: border-box;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .5px;
+  border: none;
+  border-radius: $border_radius_primary;
+  font-size: $font_size_smaller;
+  margin: 1.25em 0;
+  padding: .75em;
+  width: 100%;
+}

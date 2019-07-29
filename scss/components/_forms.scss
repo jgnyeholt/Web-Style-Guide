@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__label--hidden {
+      display: none;
+  }
+  &__input {
+    border: none;
+    border-bottom: 5px solid $color_primary_green;
+    margin: 1em 0;
+    padding: .5em;
+  }
+  &__input::placeholder{
+    font-size: $font_size_smaller;
+    font-weight: bold;
+  }
+  &__input:focus{
+    outline: none;
+  }
+}

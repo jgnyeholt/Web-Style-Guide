@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  padding: 1.5em;
+  color: $font_color_primary;
+  font-family: $font_primary, $font_secondary;
+  font-size: $font_size_primary;
+}
+
+.card{
+  padding: .25em;
+  line-height: 1.5;
+}

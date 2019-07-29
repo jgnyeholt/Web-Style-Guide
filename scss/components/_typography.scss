@@ -1,0 +1,23 @@
+.headline--primary {
+    color: $color_primary_green;
+    line-height: initial;
+    text-align: center;
+}
+
+.headline--secondary {
+  font-weight: initial;
+  margin: 1em 0;
+}
+
+.link {
+  color: $link_color_primary;
+  font-weight: bold;
+}
+
+.blockquote {
+  border-left: 10px solid $color_primary_green;
+  border-radius: $border_radius_primary;
+  font-size: $font_size_larger;
+  font-style: italic;
+  padding-left: 1em;
+}

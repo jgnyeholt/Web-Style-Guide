@@ -1,0 +1,9 @@
+@each $name, $color in $grid-color {
+  .grid__#{$name}.theme__colors {
+    background-color: $color;
+    font-size: $font_size_smaller;
+    font-weight: bold;
+    padding: .75em;
+    border-radius: $border_radius_primary;
+  }
+}

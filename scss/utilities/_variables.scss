@@ -1,1 +1,33 @@
-ECHO is on.
+// Site colors
+$color_primary_green: #58e1c1;
+$color_lightgray: lighten(#5a5a5a, 40%);
+$color_default: #51ddfc;
+$color_success: #63cc82;
+$color_error: #e4757a;
+$color_warning: #fd7856;
+$color_info: #927bc1;
+
+
+
+
+/////////////////////////////////////////////
+//Font
+$font_primary: "Helvetica", sans-serif;
+$font_secondary: sans-serif ;
+
+//Font Size
+$font_size_primary: 1em;
+$font_size_larger: 1.4em;
+$font_size_smaller: .8em;
+
+//Font colors
+$font_color_primary: #5a5a5a;
+
+
+
+
+
+//Link color
+$link_color_primary: #51ddfc;
+//Outline styling
+$border_radius_primary: 5px;

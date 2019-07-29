@@ -1,0 +1,11 @@
+.nav__item {
+  list-style: none;
+  text-align: center;
+  padding: .75em;
+  &:hover{
+    background-color: $color_primary_green;
+    color: white;
+    border-radius: $border_radius_primary;
+    transition: .5s;
+  }
+}
