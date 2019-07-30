@@ -1,1 +1,7 @@
-
+@mixin mq($break){
+  @if $break == "large"{
+    @media (min-width: $breakpoint-lg){
+      @content;
+    }
+  }
+}

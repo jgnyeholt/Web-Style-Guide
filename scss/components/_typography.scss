@@ -2,6 +2,10 @@
     color: $color_primary_green;
     line-height: initial;
     text-align: center;
+    @include mq(large){
+      text-align: left;
+      margin-left: 1em;
+    }
 }
 
 .headline--secondary {

@@ -6,7 +6,6 @@
 // but additional styling may be needed
 // **********************************************
 
-
 // grid base class
 .grid {
 
@@ -19,7 +18,9 @@
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
       flex-direction: row;
+      justify-content: center;
     }
+
   }
 
   // .grid__col
@@ -33,7 +34,7 @@
       // selector would be .grid__col--1
       &--#{$i} {
 
-        // base styles applied to all grid columns 
+        // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
@@ -50,6 +51,7 @@
         }
       }
     }
+
   }
 }
 
@@ -64,5 +66,8 @@
       // add grid gutter
       margin-left: 10px;
     }
+  }
+  @include mq(large){
+    text-align: center;
   }
 }

@@ -1,11 +1,21 @@
-.nav__item {
-  list-style: none;
-  text-align: center;
-  padding: .75em;
-  &:hover{
-    background-color: $color_primary_green;
-    color: white;
-    border-radius: $border_radius_primary;
-    transition: .5s;
+.nav {
+  &__item{
+    list-style: none;
+    text-align: center;
+    padding: .75em;
+    &:hover{
+      background-color: $color_primary_green;
+      color: white;
+      border-radius: $border_radius_primary;
+      transition: .5s;
+    }
+    @include mq(large){
+      margin: 0 .5em;
+    }
+  }
+  @include mq(large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
