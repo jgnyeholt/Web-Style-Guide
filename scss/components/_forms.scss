@@ -1,6 +1,5 @@
 .form {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
 
   &__label--hidden {
       display: none;

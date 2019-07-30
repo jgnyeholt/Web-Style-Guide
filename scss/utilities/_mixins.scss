@@ -1,7 +1,25 @@
 @mixin mq($break){
+  @if $break == "medium"{
+    @media (min-width: $breakpoint-md){
+      @content;
+    }
+  }
   @if $break == "large"{
     @media (min-width: $breakpoint-lg){
       @content;
     }
+  }
+}
+
+@mixin flex($flex){
+  display: flex;
+  @if $flex == "row"{
+    flex-direction: $flex;
+  }
+  @else if $flex == "column"{
+    flex-direction: $flex;
+  }
+  @else {
+    flex-direction: row;
   }
 }

@@ -17,3 +17,15 @@
     margin: 1.25em;
   }
 }
+
+%img {
+  display: block;
+  margin: auto;
+}
+
+%nav {
+  list-style: none;
+  text-align: center;
+  padding: .75em;
+  // flex-grow: 1;
+}

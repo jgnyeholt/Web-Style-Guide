@@ -1,8 +1,7 @@
 .nav {
   &__item{
-    list-style: none;
-    text-align: center;
-    padding: .75em;
+    @extend %nav;
+
     &:hover{
       background-color: $color_primary_green;
       color: white;
@@ -14,8 +13,8 @@
     }
   }
   @include mq(large) {
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
     justify-content: center;
+
   }
 }

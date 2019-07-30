@@ -5,7 +5,24 @@
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
+.container {
+  padding: 1.5em;
+  color: $font_color_primary;
+  font-family: $font_primary, $font_secondary;
+  font-size: $font_size_primary;
+  @include mq(large){
+    margin: 2em 6em;
+    padding: 0;
+  }
+}
 
+.card{
+  padding: .25em;
+  line-height: 1.5;
+  @include mq(large){
+    margin: 1em;
+  }
+}
 // grid base class
 .grid {
 
@@ -16,11 +33,10 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-      flex-direction: row;
+    @include mq(medium){
+      @include flex(row);
       justify-content: center;
     }
-
   }
 
   // .grid__col
@@ -41,13 +57,12 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq(medium){
+        // base stlyes applied to all grid columns
+        margin-top: 0;
 
-          // base stlyes applied to all grid columns
-          margin-top: 0;
-
-          // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
+        // make column width a percentage of the column number / total columns
+        flex-basis: #{$i / 12 * 100 + "%"} ;
         }
       }
     }
@@ -61,8 +76,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-
+    @include mq(medium){
       // add grid gutter
       margin-left: 10px;
     }
