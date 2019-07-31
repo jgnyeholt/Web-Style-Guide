@@ -1,3 +1,4 @@
+//set grid column colors
 @each $name, $color in $grid-color {
   .grid__#{$name}.theme__colors {
     background-color: $color;

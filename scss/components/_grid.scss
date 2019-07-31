@@ -10,6 +10,7 @@
   color: $font_color_primary;
   font-family: $font_primary, $font_secondary;
   font-size: $font_size_primary;
+  //media query: large screen
   @include mq(large){
     margin: 2em 6em;
     padding: 0;
@@ -19,6 +20,7 @@
 .card{
   padding: .25em;
   line-height: 1.5;
+    //media query: large screen
   @include mq(large){
     margin: 1em;
   }
@@ -33,6 +35,7 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
+    //media query: medium screen
     @include mq(medium){
       @include flex(row);
       justify-content: center;
@@ -57,6 +60,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
+        //media query: medium screen
         @include mq(medium){
         // base stlyes applied to all grid columns
         margin-top: 0;
@@ -76,11 +80,13 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
+    //media query: medium screen
     @include mq(medium){
       // add grid gutter
       margin-left: 10px;
     }
   }
+  //media query: large screen
   @include mq(large){
     text-align: center;
   }

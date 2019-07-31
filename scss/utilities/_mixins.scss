@@ -1,3 +1,5 @@
+
+//media queries : large and medium
 @mixin mq($break){
   @if $break == "medium"{
     @media (min-width: $breakpoint-md){
@@ -11,6 +13,7 @@
   }
 }
 
+//flexbox settings
 @mixin flex($flex){
   display: flex;
   @if $flex == "row"{
