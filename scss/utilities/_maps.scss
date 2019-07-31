@@ -1,10 +1,18 @@
 //colors to set in function
 $grid-color: (
-  "col--12" : #80e8d1,
-  "col--8": #fd9f85 ,
-  "col--7": #ec9fa3,
-  "col--6": #3fabca,
-  "col--5": #88d9a0,
-  "col--4": #7ee6fd,
-  "col--3": #deb2ee,
-)
+  "col--12" : $color-grid-12,
+  "col--8": $color-grid-8,
+  "col--7": $color-grid-7,
+  "col--6": $color-grid-6,
+  "col--5": $color-grid-5,
+  "col--4": $color-grid-4,
+  "col--3": $color-grid-3,
+);
+
+$button-color: (
+  "default" : $color_default,
+  "success": $color_success,
+  "error": $color_error,
+  "warning": $color-warning,
+  "info": $color-info,
+);

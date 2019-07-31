@@ -1,22 +1,7 @@
-.btn{
-  &--default{
+//assign color to each button
+@each $name, $color in $button-color{
+  .btn--#{$name}{
     @extend %btn;
-    background-color: $color_default;
-  }
-  &--success{
-    @extend %btn;
-    background-color: $color_success;
-  }
-  &--error{
-    @extend %btn;
-    background-color: $color_error;
-  }
-  &--warning{
-    @extend %btn;
-    background-color: $color_warning;
-  }
-  &--info{
-    @extend %btn;
-    background-color: $color_info;
+    background-color: $color;
   }
 }
