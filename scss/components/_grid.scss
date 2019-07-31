@@ -8,7 +8,7 @@
 .container {
   padding: 1.5em;
   color: $font_color_primary;
-  font-family: $font_primary, $font_secondary;
+  font-family: $font_secondary;
   font-size: $font_size_primary;
   //media query: large screen
   @include mq(large){
@@ -22,7 +22,7 @@
   line-height: 1.5;
     //media query: large screen
   @include mq(large){
-    margin: 1em;
+    margin: 1em 0;
   }
 }
 

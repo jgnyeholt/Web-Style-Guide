@@ -1,5 +1,6 @@
 .nav {
   &__item{
+
     @extend %nav;
 
     &:hover{
@@ -15,6 +16,8 @@
   @include mq(large) {
     @include flex(row);
     justify-content: center;
-
+  }
+  a {
+    @extend %link;
   }
 }

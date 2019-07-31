@@ -1,19 +1,28 @@
-.headline--primary {
+.headline {
+    font-family: $font_primary;
+
+    //primary headline
+    &--primary{
     color: $color_primary_green;
     line-height: initial;
     text-align: center;
+    //primary headling media query
     @include mq(large){
       text-align: left;
       margin-left: 1em;
     }
+  }
+  //secondary headline
+  &--secondary {
+    font-family: $font_primary;
+    font-weight: initial;
+    margin: 1em 0;
+  }
 }
 
-.headline--secondary {
-  font-weight: initial;
-  margin: 1em 0;
-}
 
 .link {
+  @extend %link;
   color: $link_color_primary;
   font-weight: bold;
 }

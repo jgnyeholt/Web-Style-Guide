@@ -18,9 +18,12 @@ $color-grid-4: #7ee6fd;
 $color-grid-3: #deb2ee;
 
 /////////////////////////////////////////////
-//Font
-$font_primary: "Helvetica", sans-serif;
-$font_secondary: sans-serif ;
+//Lato and Montserrat
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:300&display=swap');
+
+
+$font_primary: 'Montserrat', sans-serif;
+$font_secondary: 'Lato', sans-serif;
 
 //Font Size
 $font_size_primary: 1em;
