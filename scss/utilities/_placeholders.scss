@@ -12,9 +12,10 @@
   width: 100%;
   @include mq(large){
     display: inline-block;
+    text-align: center;
     width: auto;
-    padding: .75em 3em;
-    margin: 1.25em;
+    padding: .75em 4em;
+    margin: 1.5em;
   }
 }
 
@@ -34,5 +35,5 @@
   list-style: none;
   text-align: center;
   padding: .75em;
-  // flex-grow: 1;
+ // flex-grow: 1;
 }

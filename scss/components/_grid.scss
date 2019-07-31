@@ -27,6 +27,11 @@
 }
 
 
+
+
+
+
+
 // grid base class
 .grid {
 
@@ -41,6 +46,10 @@
     @include mq(medium){
       @include flex(row);
       justify-content: center;
+
+      .centered{
+         text-align: center;
+      }
     }
   }
 
@@ -60,21 +69,20 @@
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
-
         // NOTE: replace with media query mixin if aiming for exceeds
         //media query: medium screen
         @include mq(medium){
-        // base stlyes applied to all grid columns
-        margin-top: 0;
+          // base stlyes applied to all grid columns
+          margin-top: 0;
 
-        // make column width a percentage of the column number / total columns
-        flex-basis: #{$i / 12 * 100 + "%"} ;
+          // make column width a percentage of the column number / total columns
+          flex-basis: #{$i / 12 * 100 + "%"} ;
         }
       }
     }
-
   }
 }
+
 
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
